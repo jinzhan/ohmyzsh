@@ -287,6 +287,8 @@ alias gamc='git am --continue'
 alias gams='git am --skip'
 alias gama='git am --abort'
 alias gamscp='git am --show-current-patch'
+alias gct='git checkout --track'
+alias gpp='git push origin HEAD:refs/for/$(git_current_branch)'
 
 function grename() {
   if [[ -z "$1" || -z "$2" ]]; then
